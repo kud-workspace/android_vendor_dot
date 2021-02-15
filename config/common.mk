@@ -106,6 +106,9 @@ DEVICE_PACKAGE_OVERLAYS += vendor/dot/overlay/common
 #Telephony
 $(call inherit-product, vendor/dot/config/telephony.mk)
 
+# Include private configuration
+-include vendor/kud/config/common.mk
+
 # Packages
 include vendor/dot/config/packages.mk
 
