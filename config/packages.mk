@@ -87,14 +87,10 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 # Dot Packages
 PRODUCT_PACKAGES += \
     Customizations \
+    SystemUpdates \
     BatteryManager \
     Seedvault \
     StitchImage \
     Music
-
-ifeq ($(DOT_OFFICIAL), true)
-PRODUCT_PACKAGES += \
-    SystemUpdates
-endif
 
 include vendor/dot/config/overlay.mk
